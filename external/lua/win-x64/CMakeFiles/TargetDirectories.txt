@@ -1,0 +1,2 @@
+C:/ame/aiventure/aiventure-github/KeraLua/external/lua/win-x64/CMakeFiles/ALL_BUILD.dir
+C:/ame/aiventure/aiventure-github/KeraLua/external/lua/win-x64/CMakeFiles/ZERO_CHECK.dir

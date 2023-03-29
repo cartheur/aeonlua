@@ -1,0 +1,36 @@
+#
+# KeraLua Travis-CI Hook
+#
+
+language: csharp
+
+dotnet: 7.0
+
+before_install:
+  - export PATH=/opt/mono/bin:$PATH
+
+install:
+  - sudo apt-get install mono-devel nunit nuget
+
+script:
+  - nuget restore aeonlua.sln
+  - msbuild aeonlua.sln /p:Configuration=Release /t:Restore
+  - msbuild aeonlua.sln /p:Configuration=Release
+  - dotnet test ./tests/build/net48/bin/Release/aeonluatest.dll
+
+# Execute additional tests or commands
+#after_script:
+#  - [run additional test commans]
+
+# Only watch the main branch
+branches:
+  only:
+    - main
+
+# Notify if needed
+notifications:
+  recipients:
+    - cartheur@pm.me
+  email:
+    on_success: change
+    on_failure: always
