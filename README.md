@@ -9,4 +9,4 @@ Before build fetch the submodules:
 Building
 ---------
 
-aeonlua uses several solution for different targets. For .NET SDK KeraLua.Core.sln and .NET 4.8 use the KeraLua.sln.
+aeonlua uses several solution for different targets. For .NET SDK aeonlua.Core.sln and .NET 4.8 use the aeonlua.sln.
