@@ -10,9 +10,9 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DebugType>portable</DebugType>
     <Optimize>true</Optimize>
-    <DocumentationFile>..\..\lib\Release\net6.0\KeraLua.xml</DocumentationFile>
+    <DocumentationFile>..\..\lib\Release\net7.0\KeraLua.xml</DocumentationFile>
     <OutputPath>..\..\lib\Release</OutputPath>
-    <DefineConstants>TRACE;NETCOREAPP</DefineConstants>
+    <DefineConstants>TRACE;NETSDK</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <OutputPath>..\..\lib\Debug</OutputPath>
@@ -44,7 +44,5 @@
   </ItemGroup>
   <Import Project="..\..\src\KeraLua.Core.projitems" Label="Shared" Condition="Exists('..\..\src\KeraLua.Core.projitems')" />
   <Import Project="..\targets\BuildLua.Windows.targets" />
-  <Import Project="..\targets\BuildLua.OSX.targets" />
   <Import Project="..\targets\BuildLua.Linux.targets" />
-  <Import Project="..\targets\KeraLua.Sign.targets" />
 </Project>
