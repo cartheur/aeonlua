@@ -112,7 +112,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\build\net48\KeraLua.csproj">
+    <ProjectReference Include="..\..\..\build\net48\AeonLua.csproj">
       <Project>{c45805a8-6436-4738-bd9f-4632eea63bbc}</Project>
       <Name>KeraLua</Name>
     </ProjectReference>
